@@ -1,0 +1,75 @@
+name: FX Predictor — Hourly Update
+
+on:
+  schedule:
+    # Runs at minute 0 of every hour, 24/7
+    # Note: GitHub Actions schedules can be delayed by up to ~10 min during peak times
+    - cron: '0 * * * *'
+
+  # Allow manual trigger from GitHub Actions tab
+  workflow_dispatch:
+
+jobs:
+  update-dashboard:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write   # needed to commit the updated dashboard.html back
+
+    steps:
+      # 1. Check out the repo
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # 2. Set up Python
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      # 3. Install dependencies
+      - name: Install dependencies
+        run: pip install yfinance pandas numpy
+
+      # 4. Run the predictor — this fetches live H1 data and updates dashboard.html in-place
+      - name: Run FX Predictor
+        run: python predictor.py
+
+      # 5. Commit the updated dashboard.html back to the repo
+      - name: Commit updated dashboard
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add dashboard.html forex_data.json
+          # Only commit if there are actual changes
+          git diff --staged --quiet || git commit -m "chore: update FX predictions [$(date -u '+%Y-%m-%d %H:%M UTC')]"
+          git push
+
+  # Separate job: deploy the updated dashboard.html to GitHub Pages
+  deploy-pages:
+    needs: update-dashboard
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: main   # make sure we get the just-committed version
+
+      - name: Setup GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload dashboard to Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'   # serve the whole repo root (dashboard.html will be at /)
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
