@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>FX Predictor — H1</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet"/>
+<style>
+  :root {
+    --bg:     #080c10;
+    --bg2:    #0d1318;
+    --bg3:    #111820;
+    --border: #1e2d3a;
+    --accent: #00ffe0;
+    --green:  #00e896;
+    --red:    #ff3e6c;
+    --yellow: #ffd93d;
+    --muted:  #3a5060;
+    --text:   #c8dde8;
+    --text2:  #607a88;
+    --gg: 0 0 16px #00e89640;
+    --rr: 0 0 16px #ff3e6c40;
+    --aa: 0 0 16px #00ffe040;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Space Mono', monospace;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+  }
+  body::after {
+    content: '';
+    position: fixed; inset: 0;
+    background: repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(0,0,0,0.04) 2px,rgba(0,0,0,0.04) 4px);
+    pointer-events: none; z-index: 9999;
+  }
+  body::before {
+    content: '';
+    position: fixed; inset: 0;
+    background-image:
+      linear-gradient(rgba(0,255,224,0.025) 1px,transparent 1px),
+      linear-gradient(90deg,rgba(0,255,224,0.025) 1px,transparent 1px);
+    background-size: 40px 40px;
+    pointer-events: none;
+  }
+
+  /* ── HEADER ── */
+  header {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 16px 24px;
+    border-bottom: 1px solid var(--border);
+    background: var(--bg2);
+    position: sticky; top: 0; z-index: 100;
+  }
+  .logo { font-family: 'Syne', sans-serif; font-weight: 800; font-size: 1.3rem; color: var(--accent); text-shadow: var(--aa); letter-spacing: -0.02em; }
+  .logo-sub { font-size: 0.6rem; color: var(--text2); letter-spacing: 0.14em; text-transform: uppercase; margin-top: 2px; font-family: 'Space Mono', monospace; font-weight: 400; }
+
+  .header-right { display: flex; flex-direction: column; align-items: flex-end; gap: 3px; }
+  .generated-at { font-size: 0.6rem; color: var(--text2); }
+  .interval-badge {
+    font-size: 0.62rem; font-weight: 700;
+    background: rgba(0,255,224,0.08); color: var(--accent);
+    border: 1px solid rgba(0,255,224,0.25);
+    padding: 2px 8px; border-radius: 3px;
+    letter-spacing: 0.1em;
+  }
+
+  /* ── MAIN ── */
+  main { padding: 20px 20px; max-width: 1400px; margin: 0 auto; }
+
+  /* ── SUMMARY BAR ── */
+  .summary-bar { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-bottom: 20px; }
+  .sc {
+    background: var(--bg2); border: 1px solid var(--border); border-radius: 6px;
+    padding: 14px 16px; transition: border-color 0.2s;
+  }
+  .sc:hover { border-color: var(--accent); }
+  .sc .lbl { font-size: 0.55rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--text2); margin-bottom: 5px; }
+  .sc .val { font-family: 'Syne', sans-serif; font-size: 1.5rem; font-weight: 800; }
+  .sc .val.up   { color: var(--green); text-shadow: var(--gg); }
+  .sc .val.down { color: var(--red);   text-shadow: var(--rr); }
+  .sc .val.neu  { color: var(--accent); text-shadow: var(--aa); }
+
+  /* ── GRID ── */
+  .cards-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 14px; }
+
+  /* ── CARD ── */
+  .pair-card {
+    background: var(--bg2); border: 1px solid var(--border); border-radius: 8px;
+    overflow: hidden; transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+    animation: fadeUp 0.45s ease both;
+  }
+  .pair-card:hover { transform: translateY(-3px); border-color: var(--accent); box-shadow: 0 8px 28px rgba(0,255,224,0.07); }
+  @keyframes fadeUp { from{opacity:0;transform:translateY(12px)} to{opacity:1;transform:none} }
+
+  .card-head {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 12px 16px; border-bottom: 1px solid var(--border);
+  }
+  .pair-name { font-family: 'Syne', sans-serif; font-weight: 800; font-size: 1rem; letter-spacing: 0.04em; }
+  .pair-meta { font-size: 0.58rem; color: var(--text2); margin-top: 2px; }
+
+  .dir-badge {
+    display: flex; align-items: center; gap: 5px;
+    padding: 5px 12px; border-radius: 4px;
+    font-weight: 700; font-size: 0.75rem; letter-spacing: 0.1em;
+  }
+  .dir-badge.up   { background: rgba(0,232,150,0.1); color: var(--green); border: 1px solid rgba(0,232,150,0.28); box-shadow: var(--gg); }
+  .dir-badge.down { background: rgba(255,62,108,0.1); color: var(--red);   border: 1px solid rgba(255,62,108,0.28); box-shadow: var(--rr); }
+
+  .card-body { padding: 14px 16px; }
+
+  /* Price & last candle */
+  .price-row { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 12px; }
+  .current-price { font-family: 'Syne', sans-serif; font-size: 1.25rem; font-weight: 800; color: var(--text); }
+  .last-candle-time { font-size: 0.57rem; color: var(--text2); text-align: right; }
+
+  /* Confidence */
+  .conf-row { display: flex; align-items: center; gap: 8px; margin-bottom: 12px; }
+  .conf-lbl { font-size: 0.58rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text2); white-space: nowrap; }
+  .conf-wrap { flex: 1; height: 4px; background: var(--border); border-radius: 2px; overflow: hidden; }
+  .conf-fill { height: 100%; border-radius: 2px; transition: width 1s ease; }
+  .conf-fill.up   { background: linear-gradient(90deg, var(--green), #00ffb2); box-shadow: var(--gg); }
+  .conf-fill.down { background: linear-gradient(90deg, var(--red),   #ff7090); box-shadow: var(--rr); }
+  .conf-pct { font-size: 0.72rem; font-weight: 700; min-width: 36px; text-align: right; }
+  .conf-pct.up   { color: var(--green); }
+  .conf-pct.down { color: var(--red);   }
+
+  /* TP / SL */
+  .levels { display: grid; grid-template-columns: 1fr 1px 1fr; margin-bottom: 12px; border: 1px solid var(--border); border-radius: 5px; overflow: hidden; }
+  .lvl-div { background: var(--border); }
+  .lvl { padding: 9px 12px; }
+  .lvl-tag { font-size: 0.55rem; text-transform: uppercase; letter-spacing: 0.12em; margin-bottom: 3px; }
+  .lvl-tag.tp { color: var(--green); }
+  .lvl-tag.sl { color: var(--red);   }
+  .lvl-price { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 0.95rem; }
+  .lvl-pips  { font-size: 0.6rem; color: var(--text2); margin-top: 1px; }
+
+  /* Indicators */
+  .inds { display: grid; grid-template-columns: repeat(3, 1fr); gap: 7px; margin-bottom: 12px; }
+  .ind-box {
+    background: var(--bg3); border: 1px solid var(--border); border-radius: 4px;
+    padding: 7px 8px; text-align: center;
+  }
+  .ind-name { font-size: 0.52rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text2); }
+  .ind-val  { font-size: 0.78rem; font-weight: 700; margin-top: 2px; }
+
+  /* Candles */
+  .candles-row { display: flex; align-items: center; gap: 6px; }
+  .candles-lbl { font-size: 0.57rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text2); }
+  .candle { font-size: 0.75rem; }
+  .candle.U { color: var(--green); }
+  .candle.D { color: var(--red);   }
+
+  /* Footer */
+  .card-foot {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 9px 16px; border-top: 1px solid var(--border); background: var(--bg3);
+  }
+  .foot-stat { font-size: 0.58rem; color: var(--text2); }
+  .foot-stat b { color: var(--accent); }
+  .kelly-tag {
+    font-size: 0.6rem; font-weight: 700;
+    background: rgba(255,217,61,0.08); color: var(--yellow);
+    border: 1px solid rgba(255,217,61,0.22);
+    padding: 2px 9px; border-radius: 3px;
+  }
+
+  /* Candle count badge */
+  .candle-count { font-size: 0.55rem; color: var(--text2); text-align: right; }
+
+  /* Error */
+  .error-body { padding: 16px; color: var(--red); font-size: 0.7rem; }
+
+  /* ── METHODOLOGY ── */
+  .method { margin-top: 28px; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
+  .method-head { padding: 12px 18px; background: var(--bg2); border-bottom: 1px solid var(--border); font-family: 'Syne', sans-serif; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); }
+  .method-body { display: grid; grid-template-columns: repeat(4, 1fr); background: var(--bg); }
+  .method-item { padding: 16px 18px; border-right: 1px solid var(--border); }
+  .method-item:last-child { border-right: none; }
+  .method-item h4 { font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent); margin-bottom: 5px; }
+  .method-item p  { font-size: 0.6rem; color: var(--text2); line-height: 1.65; }
+  .method-item .wt { font-size: 0.6rem; color: var(--yellow); margin-top: 7px; }
+
+  /* ── FOOTER ── */
+  footer { margin-top: 32px; padding: 14px 24px; border-top: 1px solid var(--border); font-size: 0.57rem; color: var(--text2); text-align: center; line-height: 1.9; }
+  footer strong { color: var(--red); }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 700px) {
+    .summary-bar { grid-template-columns: 1fr 1fr; }
+    .cards-grid  { grid-template-columns: 1fr; }
+    .method-body { grid-template-columns: 1fr 1fr; }
+    .method-item:nth-child(2) { border-right: none; }
+    .method-item:nth-child(3) { border-top: 1px solid var(--border); }
+  }
+  @media (max-width: 440px) {
+    header { padding: 12px 14px; }
+    main   { padding: 12px 12px; }
+    .method-body { grid-template-columns: 1fr; }
+    .method-item { border-right: none !important; border-top: 1px solid var(--border); }
+    .method-item:first-child { border-top: none; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div>
+    <div class="logo">FX<span style="color:var(--text)">PRED</span></div>
+    <div class="logo-sub">Probabilistic Forex Predictor · H1 Timeframe</div>
+  </div>
+  <div class="header-right">
+    <div class="interval-badge">H1 · 7 PAIRS</div>
+    <div class="generated-at" id="gen-at">Loading...</div>
+  </div>
+</header>
+
+<main>
+  <div class="summary-bar">
+    <div class="sc"><div class="lbl">Pairs Analyzed</div><div class="val neu" id="s-total">—</div></div>
+    <div class="sc"><div class="lbl">Bullish</div><div class="val up"   id="s-bull">—</div></div>
+    <div class="sc"><div class="lbl">Bearish</div><div class="val down" id="s-bear">—</div></div>
+    <div class="sc"><div class="lbl">Avg Confidence</div><div class="val neu" id="s-conf">—</div></div>
+  </div>
+
+  <div class="cards-grid" id="cards"></div>
+
+  <div class="method">
+    <div class="method-head">⬡ Prediction Methodology</div>
+    <div class="method-body">
+      <div class="method-item">
+        <h4>Markov Chain</h4>
+        <p>Encodes each H1 candle as Up/Down state. Builds a transition probability matrix from recent sequences to predict the next likely direction.</p>
+        <div class="wt">Weight: 45%</div>
+      </div>
+      <div class="method-item">
+        <h4>Z-Score / Mean Reversion</h4>
+        <p>Measures deviation from rolling 20-period mean in standard deviations. Extreme values signal probable mean reversion.</p>
+        <div class="wt">Part of indicator score</div>
+      </div>
+      <div class="method-item">
+        <h4>Indicator Scoring</h4>
+        <p>RSI overbought/oversold + MACD histogram momentum + Bollinger %B — combined into a single [-1, +1] directional score.</p>
+        <div class="wt">Weight: 55%</div>
+      </div>
+      <div class="method-item">
+        <h4>Kelly Criterion</h4>
+        <p>Optimal position size: f* = p − (1−p)/R where R = TP/SL ratio. Capped at 25% to prevent over-sizing.</p>
+        <div class="wt">Position sizing guide</div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <strong>⚠ DISCLAIMER:</strong> Educational and research use only. Not financial advice.<br>
+  Forex trading carries substantial risk. Past statistical patterns do not guarantee future results.<br>
+  Always apply proper risk management. Data source: Yahoo Finance via yfinance.
+</footer>
+
+<script>
+// ─── DATA INJECTED BY predictor.py ──────────────────────────────────────────
+// <<<FOREX_DATA_START>>>
+const FOREX_DATA=[
+  {
+    "pair": "EUR/USD",
+    "price": 1.15221,
+    "direction": "UP",
+    "confidence": 50.1,
+    "tp": 1.15615,
+    "sl": 1.14958,
+    "tp_pips": 39.4,
+    "sl_pips": 26.3,
+    "kelly_pct": 16.8,
+    "atr": 0.00263,
+    "rsi": 36.6,
+    "zscore": -1.24,
+    "macd_bull": false,
+    "markov_state": "DUD",
+    "markov_p_up": 44.9,
+    "markov_obs": 69,
+    "ind_score": 0.087,
+    "recent_candles": [
+      "U",
+      "U",
+      "D",
+      "U",
+      "D"
+    ],
+    "last_candle": "2026-03-09 08:00 UTC",
+    "candles_used": 485,
+    "error": null
+  },
+  {
+    "pair": "GBP/USD",
+    "price": 1.3308,
+    "direction": "UP",
+    "confidence": 50.1,
+    "tp": 1.33513,
+    "sl": 1.32791,
+    "tp_pips": 43.3,
+    "sl_pips": 28.9,
+    "kelly_pct": 16.8,
+    "atr": 0.00289,
+    "rsi": 37.1,
+    "zscore": -0.91,
+    "macd_bull": false,
+    "markov_state": "DUD",
+    "markov_p_up": 57.1,
+    "markov_obs": 56,
+    "ind_score": -0.114,
+    "recent_candles": [
+      "U",
+      "U",
+      "D",
+      "U",
+      "D"
+    ],
+    "last_candle": "2026-03-09 08:00 UTC",
+    "candles_used": 485,
+    "error": null
+  },
+  {
+    "pair": "USD/JPY",
+    "price": 158.62601,
+    "direction": "UP",
+    "confidence": 51.0,
+    "tp": 159.05404,
+    "sl": 158.34065,
+    "tp_pips": 42.8,
+    "sl_pips": 28.5,
+    "kelly_pct": 18.3,
+    "atr": 0.28536,
+    "rsi": 69.2,
+    "zscore": 1.01,
+    "macd_bull": true,
+    "markov_state": "UDU",
+    "markov_p_up": 46.0,
+    "markov_obs": 63,
+    "ind_score": 0.103,
+    "recent_candles": [
+      "D",
+      "D",
+      "U",
+      "D",
+      "U"
+    ],
+    "last_candle": "2026-03-09 08:00 UTC",
+    "candles_used": 482,
+    "error": null
+  },
+  {
+    "pair": "USD/CHF",
+    "price": 0.77991,
+    "direction": "UP",
+    "confidence": 52.5,
+    "tp": 0.78263,
+    "sl": 0.7781,
+    "tp_pips": 27.2,
+    "sl_pips": 18.1,
+    "kelly_pct": 20.8,
+    "atr": 0.00181,
+    "rsi": 56.1,
+    "zscore": 0.16,
+    "macd_bull": true,
+    "markov_state": "UDU",
+    "markov_p_up": 43.9,
+    "markov_obs": 57,
+    "ind_score": 0.192,
+    "recent_candles": [
+      "D",
+      "D",
+      "U",
+      "D",
+      "U"
+    ],
+    "last_candle": "2026-03-09 08:00 UTC",
+    "candles_used": 482,
+    "error": null
+  },
+  {
+    "pair": "AUD/USD",
+    "price": 0.6992,
+    "direction": "UP",
+    "confidence": 62.9,
+    "tp": 0.70223,
+    "sl": 0.69719,
+    "tp_pips": 30.3,
+    "sl_pips": 20.2,
+    "kelly_pct": 25.0,
+    "atr": 0.00202,
+    "rsi": 44.2,
+    "zscore": -0.72,
+    "macd_bull": true,
+    "markov_state": "DUD",
+    "markov_p_up": 61.3,
+    "markov_obs": 62,
+    "ind_score": 0.283,
+    "recent_candles": [
+      "U",
+      "U",
+      "D",
+      "U",
+      "D"
+    ],
+    "last_candle": "2026-03-09 08:00 UTC",
+    "candles_used": 485,
+    "error": null
+  },
+  {
+    "pair": "USD/CAD",
+    "price": 1.35675,
+    "direction": "DOWN",
+    "confidence": 58.3,
+    "tp": 1.35368,
+    "sl": 1.3588,
+    "tp_pips": 30.7,
+    "sl_pips": 20.5,
+    "kelly_pct": 25.0,
+    "atr": 0.00205,
+    "rsi": 38.6,
+    "zscore": -0.61,
+    "macd_bull": false,
+    "markov_state": "UDU",
+    "markov_p_up": 40.3,
+    "markov_obs": 62,
+    "ind_score": -0.145,
+    "recent_candles": [
+      "D",
+      "D",
+      "U",
+      "D",
+      "U"
+    ],
+    "last_candle": "2026-03-09 08:00 UTC",
+    "candles_used": 485,
+    "error": null
+  },
+  {
+    "pair": "NZD/USD",
+    "price": 0.58841,
+    "direction": "UP",
+    "confidence": 59.1,
+    "tp": 0.59047,
+    "sl": 0.58704,
+    "tp_pips": 20.6,
+    "sl_pips": 13.7,
+    "kelly_pct": 25.0,
+    "atr": 0.00137,
+    "rsi": 42.5,
+    "zscore": -0.15,
+    "macd_bull": true,
+    "markov_state": "DUD",
+    "markov_p_up": 56.5,
+    "markov_obs": 69,
+    "ind_score": 0.224,
+    "recent_candles": [
+      "U",
+      "U",
+      "D",
+      "U",
+      "D"
+    ],
+    "last_candle": "2026-03-09 08:00 UTC",
+    "candles_used": 486,
+    "error": null
+  }
+];
+const GENERATED_AT='2026-03-09 08:35 UTC';
+// <<<FOREX_DATA_END>>>
+
+// ─── RENDER ──────────────────────────────────────────────────────────────────
+function dec(pair) { return pair.includes('JPY') ? 3 : 5; }
+
+function rsiColor(v) {
+  if (v < 35) return 'var(--green)';
+  if (v > 65) return 'var(--red)';
+  return 'var(--text)';
+}
+function zColor(v) {
+  if (v < -1) return 'var(--green)';
+  if (v >  1) return 'var(--red)';
+  return 'var(--text)';
+}
+
+function cardHTML(d, i) {
+  if (d.error) return `
+    <div class="pair-card" style="animation-delay:${i*0.06}s">
+      <div class="card-head"><span class="pair-name">${d.pair}</span></div>
+      <div class="error-body">⚠ ${d.error}</div>
+    </div>`;
+
+  const up  = d.direction === 'UP';
+  const dc  = up ? 'up' : 'down';
+  const arr = up ? '▲' : '▼';
+  const candles = (d.recent_candles || [])
+    .map(c => `<span class="candle ${c}">${c==='U'?'▲':'▼'}</span>`).join('');
+
+  return `
+  <div class="pair-card" style="animation-delay:${i*0.06}s">
+    <div class="card-head">
+      <div>
+        <div class="pair-name">${d.pair}</div>
+        <div class="pair-meta">H1 · ${d.candles_used || '—'} candles</div>
+      </div>
+      <div class="dir-badge ${dc}">${arr} ${d.direction}</div>
+    </div>
+    <div class="card-body">
+      <div class="price-row">
+        <div class="current-price">${d.price.toFixed(dec(d.pair))}</div>
+        <div class="last-candle-time">Last H1: ${d.last_candle || '—'}</div>
+      </div>
+      <div class="conf-row">
+        <span class="conf-lbl">Confidence</span>
+        <div class="conf-wrap"><div class="conf-fill ${dc}" style="width:${d.confidence}%"></div></div>
+        <span class="conf-pct ${dc}">${d.confidence}%</span>
+      </div>
+      <div class="levels">
+        <div class="lvl">
+          <div class="lvl-tag tp">Take Profit</div>
+          <div class="lvl-price" style="color:var(--green)">${d.tp.toFixed(dec(d.pair))}</div>
+          <div class="lvl-pips">+${d.tp_pips} pips</div>
+        </div>
+        <div class="lvl-div"></div>
+        <div class="lvl">
+          <div class="lvl-tag sl">Stop Loss</div>
+          <div class="lvl-price" style="color:var(--red)">${d.sl.toFixed(dec(d.pair))}</div>
+          <div class="lvl-pips">−${d.sl_pips} pips</div>
+        </div>
+      </div>
+      <div class="inds">
+        <div class="ind-box">
+          <div class="ind-name">RSI (H1)</div>
+          <div class="ind-val" style="color:${rsiColor(d.rsi)}">${d.rsi}</div>
+        </div>
+        <div class="ind-box">
+          <div class="ind-name">Z-Score</div>
+          <div class="ind-val" style="color:${zColor(d.zscore)}">${d.zscore>0?'+':''}${d.zscore}</div>
+        </div>
+        <div class="ind-box">
+          <div class="ind-name">MACD</div>
+          <div class="ind-val" style="color:${d.macd_bull?'var(--green)':'var(--red)'}">${d.macd_bull?'▲ Bull':'▼ Bear'}</div>
+        </div>
+      </div>
+      <div class="candles-row">
+        <span class="candles-lbl">Last 5 H1:</span>
+        ${candles}
+      </div>
+    </div>
+    <div class="card-foot">
+      <span class="foot-stat">Markov: <b>${d.markov_state}</b> → ${d.markov_p_up}% UP (n=${d.markov_obs})</span>
+      <span class="kelly-tag">Kelly ${d.kelly_pct}%</span>
+    </div>
+  </div>`;
+}
+
+function render() {
+  const data  = FOREX_DATA;
+  const valid = data.filter(d => !d.error);
+  const bulls = valid.filter(d => d.direction === 'UP').length;
+  const avg   = valid.length
+    ? (valid.reduce((s,d) => s + d.confidence, 0) / valid.length).toFixed(1) + '%'
+    : '—';
+
+  document.getElementById('s-total').textContent = valid.length;
+  document.getElementById('s-bull').textContent  = bulls;
+  document.getElementById('s-bear').textContent  = valid.length - bulls;
+  document.getElementById('s-conf').textContent  = avg;
+  document.getElementById('gen-at').textContent  = 'Updated: ' + GENERATED_AT;
+  document.getElementById('cards').innerHTML      = data.map(cardHTML).join('');
+}
+
+render();
+</script>
+</body>
+</html>
