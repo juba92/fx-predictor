@@ -25,7 +25,7 @@
       "U"
     ],
     "last_candle": "2026-03-13 21:00 UTC",
-    "candles_used": 504,
+    "candles_used": 503,
     "error": null
   },
   {
@@ -35,7 +35,7 @@
     "confidence": 54.3,
     "tp": 1.31948,
     "sl": 1.32426,
-    "tp_pips": 28.6,
+    "tp_pips": 28.7,
     "sl_pips": 19.1,
     "kelly_pct": 23.8,
     "atr": 0.00191,
@@ -54,7 +54,7 @@
       "D"
     ],
     "last_candle": "2026-03-13 21:00 UTC",
-    "candles_used": 504,
+    "candles_used": 503,
     "error": null
   },
   {
@@ -83,27 +83,27 @@
       "D"
     ],
     "last_candle": "2026-03-13 22:00 UTC",
-    "candles_used": 502,
+    "candles_used": 501,
     "error": null
   },
   {
     "pair": "USD/CHF",
-    "price": 0.79115,
+    "price": 0.79121,
     "direction": "DOWN",
-    "confidence": 52.3,
-    "tp": 0.78924,
-    "sl": 0.79242,
+    "confidence": 52.5,
+    "tp": 0.7893,
+    "sl": 0.79248,
     "tp_pips": 19.1,
     "sl_pips": 12.7,
-    "kelly_pct": 20.5,
+    "kelly_pct": 20.8,
     "atr": 0.00127,
-    "rsi": 73.8,
-    "zscore": 1.77,
+    "rsi": 74.0,
+    "zscore": 1.8,
     "macd_bull": true,
     "markov_state": "UUU",
     "markov_p_up": 56.8,
     "markov_obs": 74,
-    "ind_score": -0.195,
+    "ind_score": -0.201,
     "recent_candles": [
       "U",
       "D",
@@ -112,7 +112,7 @@
       "U"
     ],
     "last_candle": "2026-03-13 20:00 UTC",
-    "candles_used": 500,
+    "candles_used": 499,
     "error": null
   },
   {
@@ -141,14 +141,14 @@
       "D"
     ],
     "last_candle": "2026-03-13 22:00 UTC",
-    "candles_used": 505,
+    "candles_used": 504,
     "error": null
   },
   {
     "pair": "USD/CAD",
     "price": 1.3718,
     "direction": "DOWN",
-    "confidence": 55.3,
+    "confidence": 55.0,
     "tp": 1.36851,
     "sl": 1.374,
     "tp_pips": 32.9,
@@ -159,8 +159,8 @@
     "zscore": 0.79,
     "macd_bull": false,
     "markov_state": "DUD",
-    "markov_p_up": 56.0,
-    "markov_obs": 75,
+    "markov_p_up": 56.8,
+    "markov_obs": 74,
     "ind_score": -0.291,
     "recent_candles": [
       "D",
@@ -170,7 +170,7 @@
       "D"
     ],
     "last_candle": "2026-03-13 22:00 UTC",
-    "candles_used": 505,
+    "candles_used": 504,
     "error": null
   },
   {
@@ -199,7 +199,7 @@
       "D"
     ],
     "last_candle": "2026-03-13 22:00 UTC",
-    "candles_used": 506,
+    "candles_used": 505,
     "error": null
   }
 ]
