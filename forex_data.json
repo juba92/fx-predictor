@@ -25,7 +25,7 @@
       "U"
     ],
     "last_candle": "2026-03-13 21:00 UTC",
-    "candles_used": 478,
+    "candles_used": 477,
     "error": null
   },
   {
@@ -54,7 +54,7 @@
       "D"
     ],
     "last_candle": "2026-03-13 21:00 UTC",
-    "candles_used": 478,
+    "candles_used": 477,
     "error": null
   },
   {
@@ -83,7 +83,7 @@
       "D"
     ],
     "last_candle": "2026-03-13 22:00 UTC",
-    "candles_used": 476,
+    "candles_used": 475,
     "error": null
   },
   {
@@ -112,7 +112,7 @@
       "U"
     ],
     "last_candle": "2026-03-13 20:00 UTC",
-    "candles_used": 474,
+    "candles_used": 473,
     "error": null
   },
   {
@@ -141,26 +141,26 @@
       "D"
     ],
     "last_candle": "2026-03-13 22:00 UTC",
-    "candles_used": 479,
+    "candles_used": 478,
     "error": null
   },
   {
     "pair": "USD/CAD",
     "price": 1.3718,
     "direction": "DOWN",
-    "confidence": 55.2,
+    "confidence": 54.8,
     "tp": 1.36851,
     "sl": 1.374,
     "tp_pips": 32.9,
     "sl_pips": 22.0,
-    "kelly_pct": 25.0,
+    "kelly_pct": 24.7,
     "atr": 0.0022,
     "rsi": 66.3,
     "zscore": 0.79,
     "macd_bull": false,
     "markov_state": "DUD",
-    "markov_p_up": 56.3,
-    "markov_obs": 71,
+    "markov_p_up": 57.1,
+    "markov_obs": 70,
     "ind_score": -0.291,
     "recent_candles": [
       "D",
@@ -170,7 +170,7 @@
       "D"
     ],
     "last_candle": "2026-03-13 22:00 UTC",
-    "candles_used": 479,
+    "candles_used": 478,
     "error": null
   },
   {
@@ -199,7 +199,7 @@
       "D"
     ],
     "last_candle": "2026-03-13 22:00 UTC",
-    "candles_used": 480,
+    "candles_used": 479,
     "error": null
   }
 ]
