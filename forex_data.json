@@ -25,7 +25,7 @@
       "U"
     ],
     "last_candle": "2026-03-13 21:00 UTC",
-    "candles_used": 479,
+    "candles_used": 478,
     "error": null
   },
   {
@@ -35,7 +35,7 @@
     "confidence": 54.8,
     "tp": 1.31948,
     "sl": 1.32426,
-    "tp_pips": 28.7,
+    "tp_pips": 28.6,
     "sl_pips": 19.1,
     "kelly_pct": 24.7,
     "atr": 0.00191,
@@ -54,7 +54,7 @@
       "D"
     ],
     "last_candle": "2026-03-13 21:00 UTC",
-    "candles_used": 479,
+    "candles_used": 478,
     "error": null
   },
   {
@@ -83,7 +83,7 @@
       "D"
     ],
     "last_candle": "2026-03-13 22:00 UTC",
-    "candles_used": 477,
+    "candles_used": 476,
     "error": null
   },
   {
@@ -92,11 +92,11 @@
     "direction": "DOWN",
     "confidence": 53.1,
     "tp": 0.78924,
-    "sl": 0.79243,
+    "sl": 0.79242,
     "tp_pips": 19.1,
-    "sl_pips": 12.8,
+    "sl_pips": 12.7,
     "kelly_pct": 21.8,
-    "atr": 0.00128,
+    "atr": 0.00127,
     "rsi": 73.8,
     "zscore": 1.77,
     "macd_bull": true,
@@ -112,7 +112,7 @@
       "U"
     ],
     "last_candle": "2026-03-13 20:00 UTC",
-    "candles_used": 475,
+    "candles_used": 474,
     "error": null
   },
   {
@@ -141,7 +141,7 @@
       "D"
     ],
     "last_candle": "2026-03-13 22:00 UTC",
-    "candles_used": 480,
+    "candles_used": 479,
     "error": null
   },
   {
@@ -170,7 +170,7 @@
       "D"
     ],
     "last_candle": "2026-03-13 22:00 UTC",
-    "candles_used": 480,
+    "candles_used": 479,
     "error": null
   },
   {
@@ -199,7 +199,7 @@
       "D"
     ],
     "last_candle": "2026-03-13 22:00 UTC",
-    "candles_used": 481,
+    "candles_used": 480,
     "error": null
   }
 ]
