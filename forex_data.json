@@ -25,14 +25,14 @@
       "U"
     ],
     "last_candle": "2026-03-20 21:00 UTC",
-    "candles_used": 490,
+    "candles_used": 489,
     "error": null
   },
   {
     "pair": "GBP/USD",
     "price": 1.33449,
     "direction": "DOWN",
-    "confidence": 60.2,
+    "confidence": 59.9,
     "tp": 1.33065,
     "sl": 1.33705,
     "tp_pips": 38.4,
@@ -43,8 +43,8 @@
     "zscore": -0.61,
     "macd_bull": false,
     "markov_state": "UUU",
-    "markov_p_up": 36.2,
-    "markov_obs": 47,
+    "markov_p_up": 37.0,
+    "markov_obs": 46,
     "ind_score": -0.145,
     "recent_candles": [
       "U",
@@ -54,7 +54,7 @@
       "U"
     ],
     "last_candle": "2026-03-20 21:00 UTC",
-    "candles_used": 490,
+    "candles_used": 489,
     "error": null
   },
   {
@@ -112,26 +112,26 @@
       "U"
     ],
     "last_candle": "2026-03-20 21:00 UTC",
-    "candles_used": 487,
+    "candles_used": 486,
     "error": null
   },
   {
     "pair": "AUD/USD",
     "price": 0.70238,
     "direction": "DOWN",
-    "confidence": 52.7,
+    "confidence": 52.4,
     "tp": 0.70022,
     "sl": 0.70381,
     "tp_pips": 21.5,
     "sl_pips": 14.3,
-    "kelly_pct": 21.2,
+    "kelly_pct": 20.7,
     "atr": 0.00143,
     "rsi": 25.4,
     "zscore": -1.07,
     "macd_bull": false,
     "markov_state": "UUD",
-    "markov_p_up": 45.9,
-    "markov_obs": 61,
+    "markov_p_up": 46.7,
+    "markov_obs": 60,
     "ind_score": -0.032,
     "recent_candles": [
       "D",
@@ -141,7 +141,7 @@
       "D"
     ],
     "last_candle": "2026-03-20 22:00 UTC",
-    "candles_used": 492,
+    "candles_used": 491,
     "error": null
   },
   {
@@ -170,26 +170,26 @@
       "U"
     ],
     "last_candle": "2026-03-20 21:00 UTC",
-    "candles_used": 491,
+    "candles_used": 489,
     "error": null
   },
   {
     "pair": "NZD/USD",
     "price": 0.58381,
     "direction": "DOWN",
-    "confidence": 53.2,
+    "confidence": 52.8,
     "tp": 0.5821,
     "sl": 0.58494,
     "tp_pips": 17.0,
     "sl_pips": 11.3,
-    "kelly_pct": 22.0,
+    "kelly_pct": 21.3,
     "atr": 0.00113,
     "rsi": 28.6,
     "zscore": -0.83,
     "macd_bull": false,
     "markov_state": "UUD",
-    "markov_p_up": 49.2,
-    "markov_obs": 63,
+    "markov_p_up": 50.0,
+    "markov_obs": 62,
     "ind_score": -0.103,
     "recent_candles": [
       "D",
@@ -199,7 +199,7 @@
       "D"
     ],
     "last_candle": "2026-03-20 22:00 UTC",
-    "candles_used": 493,
+    "candles_used": 492,
     "error": null
   }
 ]
