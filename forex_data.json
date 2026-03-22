@@ -83,7 +83,7 @@
       "U"
     ],
     "last_candle": "2026-03-20 21:00 UTC",
-    "candles_used": 473,
+    "candles_used": 474,
     "error": null
   },
   {
@@ -148,7 +148,7 @@
     "pair": "USD/CAD",
     "price": 1.3723,
     "direction": "DOWN",
-    "confidence": 56.1,
+    "confidence": 56.5,
     "tp": 1.3692,
     "sl": 1.37437,
     "tp_pips": 31.0,
@@ -159,8 +159,8 @@
     "zscore": -0.0,
     "macd_bull": false,
     "markov_state": "DUU",
-    "markov_p_up": 49.1,
-    "markov_obs": 57,
+    "markov_p_up": 48.2,
+    "markov_obs": 56,
     "ind_score": -0.208,
     "recent_candles": [
       "D",
@@ -170,7 +170,7 @@
       "U"
     ],
     "last_candle": "2026-03-20 21:00 UTC",
-    "candles_used": 476,
+    "candles_used": 474,
     "error": null
   },
   {
