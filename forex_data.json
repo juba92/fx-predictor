@@ -25,7 +25,7 @@
       "D"
     ],
     "last_candle": "2026-04-03 21:00 UTC",
-    "candles_used": 523,
+    "candles_used": 522,
     "error": null
   },
   {
@@ -54,7 +54,7 @@
       "D"
     ],
     "last_candle": "2026-04-03 21:00 UTC",
-    "candles_used": 523,
+    "candles_used": 522,
     "error": null
   },
   {
@@ -83,14 +83,14 @@
       "U"
     ],
     "last_candle": "2026-04-03 20:00 UTC",
-    "candles_used": 521,
+    "candles_used": 520,
     "error": null
   },
   {
     "pair": "USD/CHF",
     "price": 0.79942,
     "direction": "UP",
-    "confidence": 56.1,
+    "confidence": 55.8,
     "tp": 0.80116,
     "sl": 0.79826,
     "tp_pips": 17.4,
@@ -101,8 +101,8 @@
     "zscore": 0.32,
     "macd_bull": true,
     "markov_state": "UUD",
-    "markov_p_up": 52.9,
-    "markov_obs": 68,
+    "markov_p_up": 52.2,
+    "markov_obs": 67,
     "ind_score": 0.176,
     "recent_candles": [
       "U",
@@ -112,7 +112,7 @@
       "D"
     ],
     "last_candle": "2026-04-03 20:00 UTC",
-    "candles_used": 520,
+    "candles_used": 519,
     "error": null
   },
   {
@@ -141,7 +141,7 @@
       "D"
     ],
     "last_candle": "2026-04-03 21:00 UTC",
-    "candles_used": 526,
+    "candles_used": 525,
     "error": null
   },
   {
@@ -170,7 +170,7 @@
       "U"
     ],
     "last_candle": "2026-04-03 21:00 UTC",
-    "candles_used": 523,
+    "candles_used": 522,
     "error": null
   },
   {
@@ -199,7 +199,7 @@
       "U"
     ],
     "last_candle": "2026-04-03 21:00 UTC",
-    "candles_used": 527,
+    "candles_used": 526,
     "error": null
   }
 ]
