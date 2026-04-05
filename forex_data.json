@@ -25,7 +25,7 @@
       "D"
     ],
     "last_candle": "2026-04-03 21:00 UTC",
-    "candles_used": 480,
+    "candles_used": 479,
     "error": null
   },
   {
@@ -54,7 +54,7 @@
       "D"
     ],
     "last_candle": "2026-04-03 21:00 UTC",
-    "candles_used": 480,
+    "candles_used": 479,
     "error": null
   },
   {
@@ -83,7 +83,7 @@
       "U"
     ],
     "last_candle": "2026-04-03 20:00 UTC",
-    "candles_used": 477,
+    "candles_used": 476,
     "error": null
   },
   {
@@ -112,7 +112,7 @@
       "D"
     ],
     "last_candle": "2026-04-03 20:00 UTC",
-    "candles_used": 477,
+    "candles_used": 476,
     "error": null
   },
   {
@@ -141,7 +141,7 @@
       "D"
     ],
     "last_candle": "2026-04-03 21:00 UTC",
-    "candles_used": 483,
+    "candles_used": 482,
     "error": null
   },
   {
@@ -170,7 +170,7 @@
       "U"
     ],
     "last_candle": "2026-04-03 21:00 UTC",
-    "candles_used": 481,
+    "candles_used": 480,
     "error": null
   },
   {
@@ -199,7 +199,7 @@
       "U"
     ],
     "last_candle": "2026-04-03 21:00 UTC",
-    "candles_used": 484,
+    "candles_used": 483,
     "error": null
   }
 ]
