@@ -25,7 +25,7 @@
       "D"
     ],
     "last_candle": "2026-04-17 21:00 UTC",
-    "candles_used": 523,
+    "candles_used": 522,
     "error": null
   },
   {
@@ -54,27 +54,27 @@
       "D"
     ],
     "last_candle": "2026-04-17 21:00 UTC",
-    "candles_used": 523,
+    "candles_used": 522,
     "error": null
   },
   {
     "pair": "USD/JPY",
-    "price": 158.584,
+    "price": 158.60201,
     "direction": "DOWN",
-    "confidence": 54.8,
-    "tp": 158.13764,
-    "sl": 158.88157,
+    "confidence": 54.9,
+    "tp": 158.15565,
+    "sl": 158.89958,
     "tp_pips": 44.6,
     "sl_pips": 29.8,
-    "kelly_pct": 24.7,
+    "kelly_pct": 24.8,
     "atr": 0.29757,
-    "rsi": 34.8,
-    "zscore": -0.43,
+    "rsi": 35.2,
+    "zscore": -0.4,
     "macd_bull": false,
     "markov_state": "UUU",
     "markov_p_up": 49.2,
     "markov_obs": 65,
-    "ind_score": -0.164,
+    "ind_score": -0.167,
     "recent_candles": [
       "D",
       "U",
@@ -83,7 +83,7 @@
       "U"
     ],
     "last_candle": "2026-04-17 20:00 UTC",
-    "candles_used": 519,
+    "candles_used": 518,
     "error": null
   },
   {
@@ -112,7 +112,7 @@
       "D"
     ],
     "last_candle": "2026-04-17 21:00 UTC",
-    "candles_used": 521,
+    "candles_used": 520,
     "error": null
   },
   {
@@ -141,36 +141,36 @@
       "D"
     ],
     "last_candle": "2026-04-17 21:00 UTC",
-    "candles_used": 525,
+    "candles_used": 524,
     "error": null
   },
   {
     "pair": "USD/CAD",
-    "price": 1.3687,
-    "direction": "UP",
-    "confidence": 54.8,
-    "tp": 1.37139,
-    "sl": 1.36691,
-    "tp_pips": 26.9,
-    "sl_pips": 17.9,
-    "kelly_pct": 24.7,
-    "atr": 0.00179,
-    "rsi": 52.8,
-    "zscore": 0.73,
+    "price": 1.3693,
+    "direction": "DOWN",
+    "confidence": 50.7,
+    "tp": 1.36667,
+    "sl": 1.37105,
+    "tp_pips": 26.3,
+    "sl_pips": 17.5,
+    "kelly_pct": 17.8,
+    "atr": 0.00175,
+    "rsi": 56.5,
+    "zscore": 1.21,
     "macd_bull": true,
-    "markov_state": "UUD",
-    "markov_p_up": 52.5,
-    "markov_obs": 61,
-    "ind_score": 0.133,
+    "markov_state": "UUU",
+    "markov_p_up": 53.6,
+    "markov_obs": 69,
+    "ind_score": -0.084,
     "recent_candles": [
       "U",
       "U",
       "U",
       "U",
-      "D"
+      "U"
     ],
     "last_candle": "2026-04-17 21:00 UTC",
-    "candles_used": 522,
+    "candles_used": 521,
     "error": null
   },
   {
@@ -199,7 +199,7 @@
       "D"
     ],
     "last_candle": "2026-04-17 21:00 UTC",
-    "candles_used": 525,
+    "candles_used": 524,
     "error": null
   }
 ]
