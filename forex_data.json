@@ -25,7 +25,7 @@
       "D"
     ],
     "last_candle": "2026-05-01 21:00 UTC",
-    "candles_used": 477,
+    "candles_used": 476,
     "error": null
   },
   {
@@ -54,26 +54,26 @@
       "U"
     ],
     "last_candle": "2026-05-01 21:00 UTC",
-    "candles_used": 477,
+    "candles_used": 476,
     "error": null
   },
   {
     "pair": "USD/JPY",
     "price": 157.03999,
     "direction": "UP",
-    "confidence": 52.8,
+    "confidence": 53.2,
     "tp": 157.49299,
     "sl": 156.73799,
     "tp_pips": 45.3,
     "sl_pips": 30.2,
-    "kelly_pct": 21.3,
+    "kelly_pct": 22.0,
     "atr": 0.302,
     "rsi": 82.3,
     "zscore": 0.65,
     "macd_bull": true,
     "markov_state": "UUD",
-    "markov_p_up": 58.1,
-    "markov_obs": 74,
+    "markov_p_up": 58.9,
+    "markov_obs": 73,
     "ind_score": -0.03,
     "recent_candles": [
       "U",
@@ -83,7 +83,7 @@
       "D"
     ],
     "last_candle": "2026-05-01 20:00 UTC",
-    "candles_used": 472,
+    "candles_used": 471,
     "error": null
   },
   {
@@ -112,7 +112,7 @@
       "D"
     ],
     "last_candle": "2026-05-01 20:00 UTC",
-    "candles_used": 473,
+    "candles_used": 472,
     "error": null
   },
   {
@@ -141,7 +141,7 @@
       "U"
     ],
     "last_candle": "2026-05-01 21:00 UTC",
-    "candles_used": 477,
+    "candles_used": 476,
     "error": null
   },
   {
@@ -170,7 +170,7 @@
       "U"
     ],
     "last_candle": "2026-05-01 21:00 UTC",
-    "candles_used": 476,
+    "candles_used": 475,
     "error": null
   },
   {
@@ -199,7 +199,7 @@
       "D"
     ],
     "last_candle": "2026-05-01 21:00 UTC",
-    "candles_used": 477,
+    "candles_used": 476,
     "error": null
   }
 ]
