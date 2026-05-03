@@ -25,7 +25,7 @@
       "D"
     ],
     "last_candle": "2026-05-01 21:00 UTC",
-    "candles_used": 481,
+    "candles_used": 480,
     "error": null
   },
   {
@@ -54,7 +54,7 @@
       "U"
     ],
     "last_candle": "2026-05-01 21:00 UTC",
-    "candles_used": 481,
+    "candles_used": 480,
     "error": null
   },
   {
@@ -83,14 +83,14 @@
       "D"
     ],
     "last_candle": "2026-05-01 20:00 UTC",
-    "candles_used": 476,
+    "candles_used": 475,
     "error": null
   },
   {
     "pair": "USD/CHF",
     "price": 0.78153,
     "direction": "UP",
-    "confidence": 57.1,
+    "confidence": 57.8,
     "tp": 0.78342,
     "sl": 0.78027,
     "tp_pips": 18.9,
@@ -101,7 +101,7 @@
     "zscore": 0.61,
     "macd_bull": true,
     "markov_state": "UUD",
-    "markov_p_up": 56.9,
+    "markov_p_up": 58.5,
     "markov_obs": 65,
     "ind_score": 0.144,
     "recent_candles": [
@@ -141,26 +141,26 @@
       "U"
     ],
     "last_candle": "2026-05-01 21:00 UTC",
-    "candles_used": 481,
+    "candles_used": 479,
     "error": null
   },
   {
     "pair": "USD/CAD",
     "price": 1.3588,
-    "direction": "UP",
-    "confidence": 50.4,
-    "tp": 1.36104,
-    "sl": 1.35731,
+    "direction": "DOWN",
+    "confidence": 50.1,
+    "tp": 1.35656,
+    "sl": 1.36029,
     "tp_pips": 22.4,
     "sl_pips": 14.9,
-    "kelly_pct": 17.3,
+    "kelly_pct": 16.8,
     "atr": 0.00149,
     "rsi": 57.1,
     "zscore": 1.16,
     "macd_bull": true,
     "markov_state": "UDU",
-    "markov_p_up": 45.5,
-    "markov_obs": 55,
+    "markov_p_up": 44.4,
+    "markov_obs": 54,
     "ind_score": 0.088,
     "recent_candles": [
       "D",
@@ -170,14 +170,14 @@
       "U"
     ],
     "last_candle": "2026-05-01 21:00 UTC",
-    "candles_used": 480,
+    "candles_used": 479,
     "error": null
   },
   {
     "pair": "NZD/USD",
     "price": 0.58976,
     "direction": "DOWN",
-    "confidence": 55.9,
+    "confidence": 56.4,
     "tp": 0.58868,
     "sl": 0.59048,
     "tp_pips": 10.8,
@@ -188,8 +188,8 @@
     "zscore": -0.59,
     "macd_bull": false,
     "markov_state": "DDD",
-    "markov_p_up": 45.8,
-    "markov_obs": 59,
+    "markov_p_up": 44.8,
+    "markov_obs": 58,
     "ind_score": -0.147,
     "recent_candles": [
       "D",
@@ -199,7 +199,7 @@
       "D"
     ],
     "last_candle": "2026-05-01 21:00 UTC",
-    "candles_used": 481,
+    "candles_used": 479,
     "error": null
   }
 ]
