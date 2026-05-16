@@ -25,7 +25,7 @@
       "U"
     ],
     "last_candle": "2026-05-15 21:00 UTC",
-    "candles_used": 508,
+    "candles_used": 506,
     "error": null
   },
   {
@@ -54,7 +54,7 @@
       "D"
     ],
     "last_candle": "2026-05-15 21:00 UTC",
-    "candles_used": 508,
+    "candles_used": 506,
     "error": null
   },
   {
@@ -83,7 +83,7 @@
       "D"
     ],
     "last_candle": "2026-05-15 20:00 UTC",
-    "candles_used": 503,
+    "candles_used": 501,
     "error": null
   },
   {
@@ -112,14 +112,14 @@
       "D"
     ],
     "last_candle": "2026-05-15 21:00 UTC",
-    "candles_used": 504,
+    "candles_used": 502,
     "error": null
   },
   {
     "pair": "AUD/USD",
     "price": 0.71531,
     "direction": "UP",
-    "confidence": 55.0,
+    "confidence": 55.2,
     "tp": 0.7171,
     "sl": 0.71411,
     "tp_pips": 17.9,
@@ -130,8 +130,8 @@
     "zscore": -0.68,
     "macd_bull": true,
     "markov_state": "DDU",
-    "markov_p_up": 44.0,
-    "markov_obs": 75,
+    "markov_p_up": 44.6,
+    "markov_obs": 74,
     "ind_score": 0.279,
     "recent_candles": [
       "U",
@@ -141,7 +141,7 @@
       "U"
     ],
     "last_candle": "2026-05-15 21:00 UTC",
-    "candles_used": 508,
+    "candles_used": 506,
     "error": null
   },
   {
@@ -170,14 +170,14 @@
       "U"
     ],
     "last_candle": "2026-05-15 21:00 UTC",
-    "candles_used": 508,
+    "candles_used": 506,
     "error": null
   },
   {
     "pair": "NZD/USD",
     "price": 0.58401,
     "direction": "UP",
-    "confidence": 55.5,
+    "confidence": 55.1,
     "tp": 0.58533,
     "sl": 0.58313,
     "tp_pips": 13.2,
@@ -188,8 +188,8 @@
     "zscore": -0.93,
     "macd_bull": true,
     "markov_state": "DDD",
-    "markov_p_up": 43.5,
-    "markov_obs": 69,
+    "markov_p_up": 42.6,
+    "markov_obs": 68,
     "ind_score": 0.305,
     "recent_candles": [
       "U",
@@ -199,7 +199,7 @@
       "D"
     ],
     "last_candle": "2026-05-15 21:00 UTC",
-    "candles_used": 508,
+    "candles_used": 506,
     "error": null
   }
 ]
