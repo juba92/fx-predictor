@@ -25,7 +25,7 @@
       "U"
     ],
     "last_candle": "2026-05-15 21:00 UTC",
-    "candles_used": 476,
+    "candles_used": 474,
     "error": null
   },
   {
@@ -54,7 +54,7 @@
       "D"
     ],
     "last_candle": "2026-05-15 21:00 UTC",
-    "candles_used": 476,
+    "candles_used": 474,
     "error": null
   },
   {
@@ -83,7 +83,7 @@
       "D"
     ],
     "last_candle": "2026-05-15 20:00 UTC",
-    "candles_used": 471,
+    "candles_used": 469,
     "error": null
   },
   {
@@ -112,7 +112,7 @@
       "D"
     ],
     "last_candle": "2026-05-15 21:00 UTC",
-    "candles_used": 472,
+    "candles_used": 470,
     "error": null
   },
   {
@@ -141,7 +141,7 @@
       "U"
     ],
     "last_candle": "2026-05-15 21:00 UTC",
-    "candles_used": 476,
+    "candles_used": 474,
     "error": null
   },
   {
@@ -170,14 +170,14 @@
       "U"
     ],
     "last_candle": "2026-05-15 21:00 UTC",
-    "candles_used": 476,
+    "candles_used": 474,
     "error": null
   },
   {
     "pair": "NZD/USD",
     "price": 0.58401,
     "direction": "UP",
-    "confidence": 55.7,
+    "confidence": 56.3,
     "tp": 0.58533,
     "sl": 0.58313,
     "tp_pips": 13.2,
@@ -188,8 +188,8 @@
     "zscore": -0.93,
     "macd_bull": true,
     "markov_state": "DDD",
-    "markov_p_up": 43.9,
-    "markov_obs": 66,
+    "markov_p_up": 45.3,
+    "markov_obs": 64,
     "ind_score": 0.305,
     "recent_candles": [
       "U",
@@ -199,7 +199,7 @@
       "D"
     ],
     "last_candle": "2026-05-15 21:00 UTC",
-    "candles_used": 476,
+    "candles_used": 474,
     "error": null
   }
 ]
