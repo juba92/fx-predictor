@@ -3,7 +3,7 @@
     "pair": "EUR/USD",
     "price": 1.16591,
     "direction": "DOWN",
-    "confidence": 55.4,
+    "confidence": 55.6,
     "tp": 1.16431,
     "sl": 1.16698,
     "tp_pips": 16.0,
@@ -14,8 +14,8 @@
     "zscore": 0.26,
     "macd_bull": false,
     "markov_state": "DDD",
-    "markov_p_up": 52.4,
-    "markov_obs": 84,
+    "markov_p_up": 51.8,
+    "markov_obs": 83,
     "ind_score": -0.235,
     "recent_candles": [
       "D",
@@ -25,7 +25,7 @@
       "D"
     ],
     "last_candle": "2026-05-29 22:00 UTC",
-    "candles_used": 508,
+    "candles_used": 506,
     "error": null
   },
   {
@@ -54,14 +54,14 @@
       "U"
     ],
     "last_candle": "2026-05-29 22:00 UTC",
-    "candles_used": 508,
+    "candles_used": 506,
     "error": null
   },
   {
     "pair": "USD/JPY",
     "price": 159.255,
     "direction": "UP",
-    "confidence": 61.2,
+    "confidence": 60.9,
     "tp": 159.38904,
     "sl": 159.16565,
     "tp_pips": 13.4,
@@ -72,8 +72,8 @@
     "zscore": -0.25,
     "macd_bull": true,
     "markov_state": "DDU",
-    "markov_p_up": 60.7,
-    "markov_obs": 61,
+    "markov_p_up": 60.0,
+    "markov_obs": 60,
     "ind_score": 0.234,
     "recent_candles": [
       "U",
@@ -83,26 +83,26 @@
       "U"
     ],
     "last_candle": "2026-05-29 22:00 UTC",
-    "candles_used": 504,
+    "candles_used": 502,
     "error": null
   },
   {
     "pair": "USD/CHF",
     "price": 0.78075,
     "direction": "UP",
-    "confidence": 51.3,
+    "confidence": 51.7,
     "tp": 0.78267,
     "sl": 0.77947,
     "tp_pips": 19.2,
     "sl_pips": 12.8,
-    "kelly_pct": 18.8,
+    "kelly_pct": 19.5,
     "atr": 0.00128,
     "rsi": 36.2,
     "zscore": -1.34,
     "macd_bull": false,
     "markov_state": "DDU",
-    "markov_p_up": 47.0,
-    "markov_obs": 66,
+    "markov_p_up": 47.7,
+    "markov_obs": 65,
     "ind_score": 0.098,
     "recent_candles": [
       "U",
@@ -112,14 +112,14 @@
       "U"
     ],
     "last_candle": "2026-05-29 21:00 UTC",
-    "candles_used": 504,
+    "candles_used": 502,
     "error": null
   },
   {
     "pair": "AUD/USD",
     "price": 0.7186,
     "direction": "UP",
-    "confidence": 56.5,
+    "confidence": 56.2,
     "tp": 0.71978,
     "sl": 0.71781,
     "tp_pips": 11.8,
@@ -130,8 +130,8 @@
     "zscore": 0.72,
     "macd_bull": true,
     "markov_state": "UDD",
-    "markov_p_up": 56.2,
-    "markov_obs": 73,
+    "markov_p_up": 55.6,
+    "markov_obs": 72,
     "ind_score": 0.134,
     "recent_candles": [
       "D",
@@ -141,7 +141,7 @@
       "D"
     ],
     "last_candle": "2026-05-29 22:00 UTC",
-    "candles_used": 508,
+    "candles_used": 506,
     "error": null
   },
   {
@@ -170,7 +170,7 @@
       "D"
     ],
     "last_candle": "2026-05-29 22:00 UTC",
-    "candles_used": 508,
+    "candles_used": 506,
     "error": null
   },
   {
@@ -199,7 +199,7 @@
       "U"
     ],
     "last_candle": "2026-05-29 22:00 UTC",
-    "candles_used": 508,
+    "candles_used": 506,
     "error": null
   }
 ]
