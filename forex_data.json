@@ -25,7 +25,7 @@
       "D"
     ],
     "last_candle": "2026-06-19 22:00 UTC",
-    "candles_used": 510,
+    "candles_used": 507,
     "error": null
   },
   {
@@ -54,26 +54,26 @@
       "D"
     ],
     "last_candle": "2026-06-19 22:00 UTC",
-    "candles_used": 510,
+    "candles_used": 507,
     "error": null
   },
   {
     "pair": "USD/JPY",
     "price": 161.28,
     "direction": "UP",
-    "confidence": 51.1,
+    "confidence": 50.8,
     "tp": 161.43643,
     "sl": 161.17571,
     "tp_pips": 15.6,
     "sl_pips": 10.4,
-    "kelly_pct": 18.5,
+    "kelly_pct": 18.0,
     "atr": 0.10429,
     "rsi": 47.6,
     "zscore": 0.06,
     "macd_bull": false,
     "markov_state": "UDD",
-    "markov_p_up": 65.5,
-    "markov_obs": 58,
+    "markov_p_up": 64.9,
+    "markov_obs": 57,
     "ind_score": -0.215,
     "recent_candles": [
       "D",
@@ -83,26 +83,26 @@
       "D"
     ],
     "last_candle": "2026-06-19 22:00 UTC",
-    "candles_used": 508,
+    "candles_used": 505,
     "error": null
   },
   {
     "pair": "USD/CHF",
     "price": 0.8064,
     "direction": "DOWN",
-    "confidence": 51.6,
+    "confidence": 51.9,
     "tp": 0.80505,
     "sl": 0.8073,
     "tp_pips": 13.5,
     "sl_pips": 9.0,
-    "kelly_pct": 19.3,
+    "kelly_pct": 19.8,
     "atr": 0.0009,
     "rsi": 41.1,
     "zscore": -0.65,
     "macd_bull": false,
     "markov_state": "UDD",
-    "markov_p_up": 55.1,
-    "markov_obs": 69,
+    "markov_p_up": 54.4,
+    "markov_obs": 68,
     "ind_score": -0.141,
     "recent_candles": [
       "D",
@@ -112,7 +112,7 @@
       "D"
     ],
     "last_candle": "2026-06-19 22:00 UTC",
-    "candles_used": 507,
+    "candles_used": 504,
     "error": null
   },
   {
@@ -141,7 +141,7 @@
       "U"
     ],
     "last_candle": "2026-06-19 22:00 UTC",
-    "candles_used": 510,
+    "candles_used": 507,
     "error": null
   },
   {
@@ -170,7 +170,7 @@
       "D"
     ],
     "last_candle": "2026-06-19 23:00 UTC",
-    "candles_used": 512,
+    "candles_used": 509,
     "error": null
   },
   {
@@ -199,7 +199,7 @@
       "U"
     ],
     "last_candle": "2026-06-19 22:00 UTC",
-    "candles_used": 510,
+    "candles_used": 507,
     "error": null
   }
 ]
