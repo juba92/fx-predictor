@@ -25,7 +25,7 @@
       "D"
     ],
     "last_candle": "2026-07-03 22:00 UTC",
-    "candles_used": 513,
+    "candles_used": 511,
     "error": null
   },
   {
@@ -54,7 +54,7 @@
       "D"
     ],
     "last_candle": "2026-07-03 22:00 UTC",
-    "candles_used": 513,
+    "candles_used": 511,
     "error": null
   },
   {
@@ -83,7 +83,7 @@
       "D"
     ],
     "last_candle": "2026-07-03 21:00 UTC",
-    "candles_used": 511,
+    "candles_used": 509,
     "error": null
   },
   {
@@ -112,14 +112,14 @@
       "D"
     ],
     "last_candle": "2026-07-03 21:00 UTC",
-    "candles_used": 510,
+    "candles_used": 508,
     "error": null
   },
   {
     "pair": "AUD/USD",
     "price": 0.6943,
     "direction": "DOWN",
-    "confidence": 60.2,
+    "confidence": 60.6,
     "tp": 0.69382,
     "sl": 0.69462,
     "tp_pips": 4.8,
@@ -130,8 +130,8 @@
     "zscore": 0.78,
     "macd_bull": false,
     "markov_state": "DUD",
-    "markov_p_up": 44.9,
-    "markov_obs": 69,
+    "markov_p_up": 44.1,
+    "markov_obs": 68,
     "ind_score": -0.289,
     "recent_candles": [
       "U",
@@ -141,7 +141,7 @@
       "D"
     ],
     "last_candle": "2026-07-03 22:00 UTC",
-    "candles_used": 513,
+    "candles_used": 511,
     "error": null
   },
   {
@@ -170,7 +170,7 @@
       "U"
     ],
     "last_candle": "2026-07-03 22:00 UTC",
-    "candles_used": 515,
+    "candles_used": 513,
     "error": null
   },
   {
@@ -199,7 +199,7 @@
       "U"
     ],
     "last_candle": "2026-07-03 22:00 UTC",
-    "candles_used": 513,
+    "candles_used": 511,
     "error": null
   }
 ]
