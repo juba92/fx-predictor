@@ -25,14 +25,14 @@
       "U"
     ],
     "last_candle": "2026-07-10 22:00 UTC",
-    "candles_used": 487,
+    "candles_used": 485,
     "error": null
   },
   {
     "pair": "GBP/USD",
     "price": 1.33982,
     "direction": "DOWN",
-    "confidence": 55.7,
+    "confidence": 56.2,
     "tp": 1.33797,
     "sl": 1.34105,
     "tp_pips": 18.5,
@@ -43,8 +43,8 @@
     "zscore": -1.28,
     "macd_bull": false,
     "markov_state": "UUD",
-    "markov_p_up": 31.7,
-    "markov_obs": 60,
+    "markov_p_up": 30.5,
+    "markov_obs": 59,
     "ind_score": 0.092,
     "recent_candles": [
       "D",
@@ -54,14 +54,14 @@
       "D"
     ],
     "last_candle": "2026-07-10 22:00 UTC",
-    "candles_used": 487,
+    "candles_used": 485,
     "error": null
   },
   {
     "pair": "USD/JPY",
     "price": 161.672,
     "direction": "UP",
-    "confidence": 55.8,
+    "confidence": 55.5,
     "tp": 161.95989,
     "sl": 161.48007,
     "tp_pips": 28.8,
@@ -72,8 +72,8 @@
     "zscore": 0.09,
     "macd_bull": true,
     "markov_state": "UUD",
-    "markov_p_up": 50.7,
-    "markov_obs": 73,
+    "markov_p_up": 50.0,
+    "markov_obs": 72,
     "ind_score": 0.199,
     "recent_candles": [
       "U",
@@ -83,26 +83,26 @@
       "D"
     ],
     "last_candle": "2026-07-10 21:00 UTC",
-    "candles_used": 485,
+    "candles_used": 483,
     "error": null
   },
   {
     "pair": "USD/CHF",
     "price": 0.8078,
     "direction": "DOWN",
-    "confidence": 50.5,
+    "confidence": 51.0,
     "tp": 0.8062,
     "sl": 0.80887,
     "tp_pips": 16.0,
     "sl_pips": 10.7,
-    "kelly_pct": 17.5,
+    "kelly_pct": 18.3,
     "atr": 0.00107,
     "rsi": 65.6,
     "zscore": 0.79,
     "macd_bull": true,
     "markov_state": "UDD",
-    "markov_p_up": 41.1,
-    "markov_obs": 56,
+    "markov_p_up": 40.0,
+    "markov_obs": 55,
     "ind_score": 0.127,
     "recent_candles": [
       "U",
@@ -112,7 +112,7 @@
       "D"
     ],
     "last_candle": "2026-07-10 22:00 UTC",
-    "candles_used": 485,
+    "candles_used": 483,
     "error": null
   },
   {
@@ -141,7 +141,7 @@
       "D"
     ],
     "last_candle": "2026-07-10 22:00 UTC",
-    "candles_used": 487,
+    "candles_used": 485,
     "error": null
   },
   {
@@ -170,7 +170,7 @@
       "D"
     ],
     "last_candle": "2026-07-10 22:00 UTC",
-    "candles_used": 488,
+    "candles_used": 486,
     "error": null
   },
   {
@@ -199,7 +199,7 @@
       "D"
     ],
     "last_candle": "2026-07-10 22:00 UTC",
-    "candles_used": 487,
+    "candles_used": 485,
     "error": null
   }
 ]
