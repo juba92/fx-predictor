@@ -25,14 +25,14 @@
       "U"
     ],
     "last_candle": "2026-07-24 22:00 UTC",
-    "candles_used": 488,
+    "candles_used": 486,
     "error": null
   },
   {
     "pair": "GBP/USD",
     "price": 1.33186,
     "direction": "UP",
-    "confidence": 55.5,
+    "confidence": 55.0,
     "tp": 1.33371,
     "sl": 1.33062,
     "tp_pips": 18.5,
@@ -43,8 +43,8 @@
     "zscore": -0.48,
     "macd_bull": true,
     "markov_state": "DUD",
-    "markov_p_up": 46.3,
-    "markov_obs": 54,
+    "markov_p_up": 45.3,
+    "markov_obs": 53,
     "ind_score": 0.259,
     "recent_candles": [
       "D",
@@ -54,7 +54,7 @@
       "D"
     ],
     "last_candle": "2026-07-24 22:00 UTC",
-    "candles_used": 488,
+    "candles_used": 486,
     "error": null
   },
   {
@@ -83,14 +83,14 @@
       "D"
     ],
     "last_candle": "2026-07-24 21:00 UTC",
-    "candles_used": 484,
+    "candles_used": 482,
     "error": null
   },
   {
     "pair": "USD/CHF",
     "price": 0.8177,
     "direction": "DOWN",
-    "confidence": 60.3,
+    "confidence": 60.7,
     "tp": 0.8165,
     "sl": 0.8185,
     "tp_pips": 12.0,
@@ -101,8 +101,8 @@
     "zscore": 0.58,
     "macd_bull": false,
     "markov_state": "UDD",
-    "markov_p_up": 43.6,
-    "markov_obs": 55,
+    "markov_p_up": 42.6,
+    "markov_obs": 54,
     "ind_score": -0.269,
     "recent_candles": [
       "U",
@@ -112,7 +112,7 @@
       "D"
     ],
     "last_candle": "2026-07-24 22:00 UTC",
-    "candles_used": 485,
+    "candles_used": 483,
     "error": null
   },
   {
@@ -141,7 +141,7 @@
       "D"
     ],
     "last_candle": "2026-07-24 22:00 UTC",
-    "candles_used": 488,
+    "candles_used": 486,
     "error": null
   },
   {
@@ -170,7 +170,7 @@
       "U"
     ],
     "last_candle": "2026-07-24 22:00 UTC",
-    "candles_used": 488,
+    "candles_used": 486,
     "error": null
   },
   {
@@ -199,7 +199,7 @@
       "D"
     ],
     "last_candle": "2026-07-24 22:00 UTC",
-    "candles_used": 488,
+    "candles_used": 486,
     "error": null
   }
 ]
