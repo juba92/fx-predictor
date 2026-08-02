@@ -25,7 +25,7 @@
       "D"
     ],
     "last_candle": "2026-07-31 22:00 UTC",
-    "candles_used": 487,
+    "candles_used": 485,
     "error": null
   },
   {
@@ -54,7 +54,7 @@
       "U"
     ],
     "last_candle": "2026-07-31 22:00 UTC",
-    "candles_used": 487,
+    "candles_used": 485,
     "error": null
   },
   {
@@ -83,14 +83,14 @@
       "D"
     ],
     "last_candle": "2026-07-31 22:00 UTC",
-    "candles_used": 483,
+    "candles_used": 481,
     "error": null
   },
   {
     "pair": "USD/CHF",
     "price": 0.8074,
     "direction": "UP",
-    "confidence": 67.1,
+    "confidence": 66.9,
     "tp": 0.81027,
     "sl": 0.80549,
     "tp_pips": 28.7,
@@ -101,8 +101,8 @@
     "zscore": -0.49,
     "macd_bull": true,
     "markov_state": "UUD",
-    "markov_p_up": 72.1,
-    "markov_obs": 61,
+    "markov_p_up": 71.7,
+    "markov_obs": 60,
     "ind_score": 0.259,
     "recent_candles": [
       "U",
@@ -112,14 +112,14 @@
       "D"
     ],
     "last_candle": "2026-07-31 21:00 UTC",
-    "candles_used": 484,
+    "candles_used": 482,
     "error": null
   },
   {
     "pair": "AUD/USD",
     "price": 0.70254,
     "direction": "DOWN",
-    "confidence": 58.3,
+    "confidence": 58.7,
     "tp": 0.70076,
     "sl": 0.70374,
     "tp_pips": 17.9,
@@ -130,8 +130,8 @@
     "zscore": -0.44,
     "macd_bull": false,
     "markov_state": "DDU",
-    "markov_p_up": 41.5,
-    "markov_obs": 65,
+    "markov_p_up": 40.6,
+    "markov_obs": 64,
     "ind_score": -0.162,
     "recent_candles": [
       "U",
@@ -141,14 +141,14 @@
       "U"
     ],
     "last_candle": "2026-07-31 22:00 UTC",
-    "candles_used": 487,
+    "candles_used": 485,
     "error": null
   },
   {
     "pair": "USD/CAD",
     "price": 1.4017,
     "direction": "DOWN",
-    "confidence": 55.5,
+    "confidence": 55.9,
     "tp": 1.39922,
     "sl": 1.40335,
     "tp_pips": 24.8,
@@ -159,8 +159,8 @@
     "zscore": -0.6,
     "macd_bull": false,
     "markov_state": "DDU",
-    "markov_p_up": 46.7,
-    "markov_obs": 60,
+    "markov_p_up": 45.8,
+    "markov_obs": 59,
     "ind_score": -0.145,
     "recent_candles": [
       "D",
@@ -170,7 +170,7 @@
       "U"
     ],
     "last_candle": "2026-07-31 22:00 UTC",
-    "candles_used": 487,
+    "candles_used": 485,
     "error": null
   },
   {
@@ -199,7 +199,7 @@
       "D"
     ],
     "last_candle": "2026-07-31 22:00 UTC",
-    "candles_used": 487,
+    "candles_used": 485,
     "error": null
   }
 ]
