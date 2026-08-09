@@ -25,7 +25,7 @@
       "U"
     ],
     "last_candle": "2026-08-07 22:00 UTC",
-    "candles_used": 484,
+    "candles_used": 483,
     "error": null
   },
   {
@@ -54,7 +54,7 @@
       "U"
     ],
     "last_candle": "2026-08-07 22:00 UTC",
-    "candles_used": 484,
+    "candles_used": 483,
     "error": null
   },
   {
@@ -83,26 +83,26 @@
       "U"
     ],
     "last_candle": "2026-08-07 21:00 UTC",
-    "candles_used": 480,
+    "candles_used": 479,
     "error": null
   },
   {
     "pair": "USD/CHF",
     "price": 0.80767,
     "direction": "UP",
-    "confidence": 51.2,
+    "confidence": 50.9,
     "tp": 0.80951,
     "sl": 0.80644,
     "tp_pips": 18.4,
     "sl_pips": 12.3,
-    "kelly_pct": 18.7,
+    "kelly_pct": 18.2,
     "atr": 0.00123,
     "rsi": 20.5,
     "zscore": -1.03,
     "macd_bull": false,
     "markov_state": "DUU",
-    "markov_p_up": 50.8,
-    "markov_obs": 59,
+    "markov_p_up": 50.0,
+    "markov_obs": 58,
     "ind_score": 0.031,
     "recent_candles": [
       "D",
@@ -112,7 +112,7 @@
       "U"
     ],
     "last_candle": "2026-08-07 21:00 UTC",
-    "candles_used": 481,
+    "candles_used": 480,
     "error": null
   },
   {
@@ -141,7 +141,7 @@
       "U"
     ],
     "last_candle": "2026-08-07 22:00 UTC",
-    "candles_used": 484,
+    "candles_used": 483,
     "error": null
   },
   {
@@ -170,7 +170,7 @@
       "D"
     ],
     "last_candle": "2026-08-07 22:00 UTC",
-    "candles_used": 484,
+    "candles_used": 483,
     "error": null
   },
   {
@@ -199,7 +199,7 @@
       "U"
     ],
     "last_candle": "2026-08-07 22:00 UTC",
-    "candles_used": 484,
+    "candles_used": 483,
     "error": null
   }
 ]
