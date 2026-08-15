@@ -25,14 +25,14 @@
       "D"
     ],
     "last_candle": "2026-08-14 22:00 UTC",
-    "candles_used": 506,
+    "candles_used": 505,
     "error": null
   },
   {
     "pair": "GBP/USD",
     "price": 1.35358,
     "direction": "DOWN",
-    "confidence": 57.2,
+    "confidence": 57.6,
     "tp": 1.35195,
     "sl": 1.35467,
     "tp_pips": 16.3,
@@ -43,8 +43,8 @@
     "zscore": 0.5,
     "macd_bull": false,
     "markov_state": "UUU",
-    "markov_p_up": 50.0,
-    "markov_obs": 54,
+    "markov_p_up": 49.1,
+    "markov_obs": 53,
     "ind_score": -0.261,
     "recent_candles": [
       "D",
@@ -54,14 +54,14 @@
       "U"
     ],
     "last_candle": "2026-08-14 22:00 UTC",
-    "candles_used": 506,
+    "candles_used": 502,
     "error": null
   },
   {
     "pair": "USD/JPY",
     "price": 159.30499,
     "direction": "UP",
-    "confidence": 56.0,
+    "confidence": 56.4,
     "tp": 159.54842,
     "sl": 159.14271,
     "tp_pips": 24.3,
@@ -72,8 +72,8 @@
     "zscore": 0.53,
     "macd_bull": true,
     "markov_state": "DDU",
-    "markov_p_up": 54.0,
-    "markov_obs": 63,
+    "markov_p_up": 54.8,
+    "markov_obs": 62,
     "ind_score": 0.153,
     "recent_candles": [
       "D",
@@ -83,14 +83,14 @@
       "U"
     ],
     "last_candle": "2026-08-14 22:00 UTC",
-    "candles_used": 503,
+    "candles_used": 502,
     "error": null
   },
   {
     "pair": "USD/CHF",
     "price": 0.813,
     "direction": "UP",
-    "confidence": 59.1,
+    "confidence": 59.9,
     "tp": 0.81442,
     "sl": 0.81206,
     "tp_pips": 14.2,
@@ -101,7 +101,7 @@
     "zscore": 0.18,
     "macd_bull": true,
     "markov_state": "UDD",
-    "markov_p_up": 58.7,
+    "markov_p_up": 60.3,
     "markov_obs": 63,
     "ind_score": 0.19,
     "recent_candles": [
@@ -112,7 +112,7 @@
       "D"
     ],
     "last_candle": "2026-08-14 22:00 UTC",
-    "candles_used": 503,
+    "candles_used": 499,
     "error": null
   },
   {
@@ -141,7 +141,7 @@
       "D"
     ],
     "last_candle": "2026-08-14 22:00 UTC",
-    "candles_used": 506,
+    "candles_used": 505,
     "error": null
   },
   {
@@ -170,7 +170,7 @@
       "U"
     ],
     "last_candle": "2026-08-14 22:00 UTC",
-    "candles_used": 506,
+    "candles_used": 505,
     "error": null
   },
   {
@@ -199,7 +199,7 @@
       "U"
     ],
     "last_candle": "2026-08-14 22:00 UTC",
-    "candles_used": 506,
+    "candles_used": 505,
     "error": null
   }
 ]
