@@ -25,7 +25,7 @@
       "D"
     ],
     "last_candle": "2026-08-21 22:00 UTC",
-    "candles_used": 524,
+    "candles_used": 523,
     "error": null
   },
   {
@@ -54,35 +54,35 @@
       "U"
     ],
     "last_candle": "2026-08-21 22:00 UTC",
-    "candles_used": 524,
+    "candles_used": 523,
     "error": null
   },
   {
     "pair": "USD/JPY",
-    "price": 158.862,
+    "price": 158.94,
     "direction": "UP",
-    "confidence": 57.9,
-    "tp": 159.14325,
-    "sl": 158.6745,
-    "tp_pips": 28.1,
-    "sl_pips": 18.7,
-    "kelly_pct": 25.0,
-    "atr": 0.1875,
-    "rsi": 48.9,
-    "zscore": 0.02,
+    "confidence": 53.1,
+    "tp": 159.20775,
+    "sl": 158.7615,
+    "tp_pips": 26.8,
+    "sl_pips": 17.8,
+    "kelly_pct": 21.8,
+    "atr": 0.1785,
+    "rsi": 55.5,
+    "zscore": 0.56,
     "macd_bull": true,
-    "markov_state": "DDD",
-    "markov_p_up": 55.0,
-    "markov_obs": 40,
-    "ind_score": 0.206,
+    "markov_state": "DDU",
+    "markov_p_up": 47.7,
+    "markov_obs": 65,
+    "ind_score": 0.15,
     "recent_candles": [
       "U",
-      "U",
       "D",
       "D",
-      "D"
+      "D",
+      "U"
     ],
-    "last_candle": "2026-08-21 21:00 UTC",
+    "last_candle": "2026-08-21 23:00 UTC",
     "candles_used": 521,
     "error": null
   },
@@ -112,7 +112,7 @@
       "D"
     ],
     "last_candle": "2026-08-21 21:00 UTC",
-    "candles_used": 521,
+    "candles_used": 520,
     "error": null
   },
   {
@@ -141,7 +141,7 @@
       "U"
     ],
     "last_candle": "2026-08-21 22:00 UTC",
-    "candles_used": 524,
+    "candles_used": 523,
     "error": null
   },
   {
@@ -170,35 +170,35 @@
       "U"
     ],
     "last_candle": "2026-08-21 22:00 UTC",
-    "candles_used": 524,
+    "candles_used": 523,
     "error": null
   },
   {
     "pair": "NZD/USD",
-    "price": 0.59819,
+    "price": 0.59773,
     "direction": "DOWN",
-    "confidence": 54.7,
-    "tp": 0.59711,
-    "sl": 0.59892,
-    "tp_pips": 10.9,
-    "sl_pips": 7.3,
-    "kelly_pct": 24.5,
-    "atr": 0.00073,
-    "rsi": 62.1,
-    "zscore": 0.58,
+    "confidence": 56.5,
+    "tp": 0.59675,
+    "sl": 0.59838,
+    "tp_pips": 9.8,
+    "sl_pips": 6.5,
+    "kelly_pct": 25.0,
+    "atr": 0.00065,
+    "rsi": 46.5,
+    "zscore": -0.28,
     "macd_bull": false,
-    "markov_state": "DDU",
-    "markov_p_up": 56.1,
-    "markov_obs": 66,
-    "ind_score": -0.269,
+    "markov_state": "DUD",
+    "markov_p_up": 46.6,
+    "markov_obs": 58,
+    "ind_score": -0.179,
     "recent_candles": [
       "U",
+      "D",
+      "D",
       "U",
-      "D",
-      "D",
-      "U"
+      "D"
     ],
-    "last_candle": "2026-08-21 22:00 UTC",
+    "last_candle": "2026-08-21 23:00 UTC",
     "candles_used": 524,
     "error": null
   }
