@@ -25,26 +25,26 @@
       "D"
     ],
     "last_candle": "2026-09-18 22:00 UTC",
-    "candles_used": 508,
+    "candles_used": 505,
     "error": null
   },
   {
     "pair": "GBP/USD",
     "price": 1.33935,
     "direction": "DOWN",
-    "confidence": 51.6,
+    "confidence": 51.2,
     "tp": 1.33754,
     "sl": 1.34056,
     "tp_pips": 18.2,
     "sl_pips": 12.1,
-    "kelly_pct": 19.3,
+    "kelly_pct": 18.7,
     "atr": 0.00121,
     "rsi": 64.3,
     "zscore": 1.41,
     "macd_bull": true,
     "markov_state": "UDD",
-    "markov_p_up": 52.9,
-    "markov_obs": 68,
+    "markov_p_up": 53.7,
+    "markov_obs": 67,
     "ind_score": -0.105,
     "recent_candles": [
       "U",
@@ -54,7 +54,7 @@
       "D"
     ],
     "last_candle": "2026-09-18 22:00 UTC",
-    "candles_used": 508,
+    "candles_used": 505,
     "error": null
   },
   {
@@ -72,8 +72,8 @@
     "zscore": -0.75,
     "macd_bull": false,
     "markov_state": "UUU",
-    "markov_p_up": 47.3,
-    "markov_obs": 74,
+    "markov_p_up": 47.2,
+    "markov_obs": 72,
     "ind_score": -0.131,
     "recent_candles": [
       "D",
@@ -83,7 +83,7 @@
       "U"
     ],
     "last_candle": "2026-09-18 22:00 UTC",
-    "candles_used": 505,
+    "candles_used": 502,
     "error": null
   },
   {
@@ -112,7 +112,7 @@
       "D"
     ],
     "last_candle": "2026-09-18 21:00 UTC",
-    "candles_used": 504,
+    "candles_used": 501,
     "error": null
   },
   {
@@ -130,8 +130,8 @@
     "zscore": -0.48,
     "macd_bull": false,
     "markov_state": "DDD",
-    "markov_p_up": 52.1,
-    "markov_obs": 71,
+    "markov_p_up": 52.2,
+    "markov_obs": 69,
     "ind_score": -0.158,
     "recent_candles": [
       "U",
@@ -141,7 +141,7 @@
       "D"
     ],
     "last_candle": "2026-09-18 22:00 UTC",
-    "candles_used": 508,
+    "candles_used": 505,
     "error": null
   },
   {
@@ -170,7 +170,7 @@
       "D"
     ],
     "last_candle": "2026-09-18 22:00 UTC",
-    "candles_used": 509,
+    "candles_used": 506,
     "error": null
   },
   {
@@ -199,7 +199,7 @@
       "D"
     ],
     "last_candle": "2026-09-18 22:00 UTC",
-    "candles_used": 509,
+    "candles_used": 506,
     "error": null
   }
 ]
