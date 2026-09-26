@@ -25,16 +25,16 @@
       "D"
     ],
     "last_candle": "2026-09-25 22:00 UTC",
-    "candles_used": 521,
+    "candles_used": 515,
     "error": null
   },
   {
     "pair": "GBP/USD",
     "price": 1.32464,
-    "direction": "UP",
+    "direction": "DOWN",
     "confidence": 50.2,
-    "tp": 1.32624,
-    "sl": 1.32358,
+    "tp": 1.32305,
+    "sl": 1.32571,
     "tp_pips": 15.9,
     "sl_pips": 10.6,
     "kelly_pct": 17.0,
@@ -43,8 +43,8 @@
     "zscore": 0.58,
     "macd_bull": true,
     "markov_state": "DDU",
-    "markov_p_up": 41.4,
-    "markov_obs": 70,
+    "markov_p_up": 40.6,
+    "markov_obs": 69,
     "ind_score": 0.148,
     "recent_candles": [
       "D",
@@ -54,26 +54,26 @@
       "U"
     ],
     "last_candle": "2026-09-25 22:00 UTC",
-    "candles_used": 521,
+    "candles_used": 515,
     "error": null
   },
   {
     "pair": "USD/JPY",
     "price": 157.185,
     "direction": "DOWN",
-    "confidence": 53.2,
+    "confidence": 52.8,
     "tp": 156.74314,
     "sl": 157.47957,
     "tp_pips": 44.2,
     "sl_pips": 29.5,
-    "kelly_pct": 22.0,
+    "kelly_pct": 21.3,
     "atr": 0.29457,
     "rsi": 22.8,
     "zscore": -0.95,
     "macd_bull": false,
     "markov_state": "UDD",
-    "markov_p_up": 43.5,
-    "markov_obs": 62,
+    "markov_p_up": 44.3,
+    "markov_obs": 61,
     "ind_score": -0.009,
     "recent_candles": [
       "U",
@@ -83,7 +83,7 @@
       "D"
     ],
     "last_candle": "2026-09-25 22:00 UTC",
-    "candles_used": 518,
+    "candles_used": 512,
     "error": null
   },
   {
@@ -112,7 +112,7 @@
       "D"
     ],
     "last_candle": "2026-09-25 21:00 UTC",
-    "candles_used": 517,
+    "candles_used": 511,
     "error": null
   },
   {
@@ -141,26 +141,26 @@
       "D"
     ],
     "last_candle": "2026-09-25 22:00 UTC",
-    "candles_used": 521,
+    "candles_used": 515,
     "error": null
   },
   {
     "pair": "USD/CAD",
     "price": 1.4141,
     "direction": "DOWN",
-    "confidence": 50.6,
+    "confidence": 50.9,
     "tp": 1.41207,
     "sl": 1.41545,
     "tp_pips": 20.3,
     "sl_pips": 13.5,
-    "kelly_pct": 17.7,
+    "kelly_pct": 18.2,
     "atr": 0.00135,
     "rsi": 48.5,
     "zscore": -0.71,
     "macd_bull": false,
     "markov_state": "UDU",
-    "markov_p_up": 56.9,
-    "markov_obs": 72,
+    "markov_p_up": 56.3,
+    "markov_obs": 71,
     "ind_score": -0.135,
     "recent_candles": [
       "U",
@@ -170,14 +170,14 @@
       "U"
     ],
     "last_candle": "2026-09-25 22:00 UTC",
-    "candles_used": 522,
+    "candles_used": 516,
     "error": null
   },
   {
     "pair": "NZD/USD",
     "price": 0.5659,
     "direction": "UP",
-    "confidence": 62.6,
+    "confidence": 62.4,
     "tp": 0.56698,
     "sl": 0.56518,
     "tp_pips": 10.8,
@@ -188,8 +188,8 @@
     "zscore": -0.99,
     "macd_bull": true,
     "markov_state": "DDD",
-    "markov_p_up": 59.0,
-    "markov_obs": 78,
+    "markov_p_up": 58.4,
+    "markov_obs": 77,
     "ind_score": 0.312,
     "recent_candles": [
       "D",
@@ -199,7 +199,7 @@
       "D"
     ],
     "last_candle": "2026-09-25 22:00 UTC",
-    "candles_used": 521,
+    "candles_used": 515,
     "error": null
   }
 ]
