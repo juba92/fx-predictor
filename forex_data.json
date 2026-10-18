@@ -3,7 +3,7 @@
     "pair": "EUR/USD",
     "price": 1.12435,
     "direction": "DOWN",
-    "confidence": 61.4,
+    "confidence": 60.8,
     "tp": 1.12255,
     "sl": 1.12556,
     "tp_pips": 18.0,
@@ -14,8 +14,8 @@
     "zscore": 0.11,
     "macd_bull": false,
     "markov_state": "UUU",
-    "markov_p_up": 38.2,
-    "markov_obs": 34,
+    "markov_p_up": 39.4,
+    "markov_obs": 33,
     "ind_score": -0.22,
     "recent_candles": [
       "U",
@@ -25,7 +25,7 @@
       "U"
     ],
     "last_candle": "2026-10-16 22:00 UTC",
-    "candles_used": 481,
+    "candles_used": 478,
     "error": null
   },
   {
@@ -54,7 +54,7 @@
       "U"
     ],
     "last_candle": "2026-10-16 23:00 UTC",
-    "candles_used": 482,
+    "candles_used": 479,
     "error": null
   },
   {
@@ -83,7 +83,7 @@
       "D"
     ],
     "last_candle": "2026-10-16 21:00 UTC",
-    "candles_used": 479,
+    "candles_used": 476,
     "error": null
   },
   {
@@ -112,7 +112,7 @@
       "D"
     ],
     "last_candle": "2026-10-16 21:00 UTC",
-    "candles_used": 476,
+    "candles_used": 473,
     "error": null
   },
   {
@@ -141,26 +141,26 @@
       "U"
     ],
     "last_candle": "2026-10-16 22:00 UTC",
-    "candles_used": 481,
+    "candles_used": 478,
     "error": null
   },
   {
     "pair": "USD/CAD",
     "price": 1.4137,
     "direction": "UP",
-    "confidence": 50.2,
+    "confidence": 50.1,
     "tp": 1.41614,
     "sl": 1.41208,
     "tp_pips": 24.4,
     "sl_pips": 16.2,
-    "kelly_pct": 17.0,
+    "kelly_pct": 16.8,
     "atr": 0.00162,
     "rsi": 37.6,
     "zscore": -1.41,
     "macd_bull": false,
     "markov_state": "DDD",
-    "markov_p_up": 44.0,
-    "markov_obs": 50,
+    "markov_p_up": 43.8,
+    "markov_obs": 48,
     "ind_score": 0.105,
     "recent_candles": [
       "U",
@@ -170,7 +170,7 @@
       "D"
     ],
     "last_candle": "2026-10-16 22:00 UTC",
-    "candles_used": 481,
+    "candles_used": 478,
     "error": null
   },
   {
@@ -199,7 +199,7 @@
       "U"
     ],
     "last_candle": "2026-10-16 22:00 UTC",
-    "candles_used": 481,
+    "candles_used": 478,
     "error": null
   }
 ]
