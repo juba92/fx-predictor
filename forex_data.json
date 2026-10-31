@@ -25,7 +25,7 @@
       "U"
     ],
     "last_candle": "2026-10-30 21:00 UTC",
-    "candles_used": 506,
+    "candles_used": 502,
     "error": null
   },
   {
@@ -54,7 +54,7 @@
       "D"
     ],
     "last_candle": "2026-10-30 21:00 UTC",
-    "candles_used": 507,
+    "candles_used": 503,
     "error": null
   },
   {
@@ -83,14 +83,14 @@
       "U"
     ],
     "last_candle": "2026-10-30 20:00 UTC",
-    "candles_used": 502,
+    "candles_used": 498,
     "error": null
   },
   {
     "pair": "USD/CHF",
     "price": 0.8249,
     "direction": "DOWN",
-    "confidence": 57.8,
+    "confidence": 57.5,
     "tp": 0.82289,
     "sl": 0.82624,
     "tp_pips": 20.1,
@@ -101,8 +101,8 @@
     "zscore": 1.35,
     "macd_bull": true,
     "markov_state": "UUD",
-    "markov_p_up": 38.8,
-    "markov_obs": 67,
+    "markov_p_up": 39.4,
+    "markov_obs": 66,
     "ind_score": -0.099,
     "recent_candles": [
       "D",
@@ -112,7 +112,7 @@
       "D"
     ],
     "last_candle": "2026-10-30 23:00 UTC",
-    "candles_used": 504,
+    "candles_used": 500,
     "error": null
   },
   {
@@ -141,7 +141,7 @@
       "D"
     ],
     "last_candle": "2026-10-30 23:00 UTC",
-    "candles_used": 507,
+    "candles_used": 503,
     "error": null
   },
   {
@@ -170,7 +170,7 @@
       "U"
     ],
     "last_candle": "2026-10-30 23:00 UTC",
-    "candles_used": 508,
+    "candles_used": 504,
     "error": null
   },
   {
@@ -199,7 +199,7 @@
       "D"
     ],
     "last_candle": "2026-10-30 23:00 UTC",
-    "candles_used": 507,
+    "candles_used": 503,
     "error": null
   }
 ]
